@@ -54,7 +54,10 @@ jobs:
           context: .
           push: true
           file: ./Dockerfile
-          tags: ghcr.io/${{ github.repository_owner }}/biblioteca-pessoal:${{ github.sha }}
+          tags: ghcr.io/halissonfranca/deveops-2:${{ github.sha }}
+
+
+
 
   deploy-dev:
     name: Deploy to Development
